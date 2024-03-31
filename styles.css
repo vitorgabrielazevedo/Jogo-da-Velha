@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.360);
+}
+
+h1{
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+}
+
+hr{
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.jogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.celula{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.celula:nth-child(1),
+.celula:nth-child(2),
+.celula:nth-child(3){
+    border-top: none;
+}
+
+.celula:nth-child(1),
+.celula:nth-child(4),
+.celula:nth-child(7){
+    border-left: none;
+}
+
+.celula:nth-child(3),
+.celula:nth-child(6),
+.celula:nth-child(9){
+    border-right: none;
+}
+
+.celula:nth-child(7),
+.celula:nth-child(8),
+.celula:nth-child(9){
+    border-bottom: none;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+h1, h2{
+    text-align: center;
+}
