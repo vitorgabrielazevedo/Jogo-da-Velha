@@ -23,7 +23,7 @@ const comecarJogo = () => {
         celula.classList.remove("o");
         celula.innerText = "";
         celula.addEventListener("click", manipularClick, {once: true}) ;
-        // {once: true} -> não permite mudar o símbolo que já esteja em uma célula
+        // {once: true} -> não permite mudar o símbolo que já esteja em uma célula porque vai mudar uma vez
     })
     
     jogadorDaVez.innerText = `JOGADOR DA VEZ: ${jogador}`;
